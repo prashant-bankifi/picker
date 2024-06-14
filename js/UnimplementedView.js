@@ -19,7 +19,7 @@ declare var __DEV__: boolean;
  */
 const UnimplementedView = (props: $FlowFixMeProps): React.Node => {
   return (
-    <View style={[styles.unimplementedView, props.style]}>
+    <View style={[styles.unimplementedView, props.style]} testID={"e2e-test"}>
       {props.children}
     </View>
   );
